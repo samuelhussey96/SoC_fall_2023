@@ -1,21 +1,0 @@
-2023-10-24T11:12:35.077552800255-11:12:35 **** Incremental Build of configuration Debug for project blinking_led_app ****
-000-make all 
-000-'Building file: ../src/main_vanilla_test.cpp'
-000-'Invoking: MicroBlaze g++ compiler'
-000-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main_vanilla_test.o" -IC:/Users/samuel_hussey1/Documents/blinking_led_firmware/blinking_led_platform/export/blinking_led_platform/sw/blinking_led_platform/standalone_domain/bspinclude/include -mno-xl-reorder -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main_vanilla_test.d" -MT"src/main_vanilla_test.o" -o "src/main_vanilla_test.o" "../src/main_vanilla_test.cpp"
-000-'Finished building: ../src/main_vanilla_test.cpp'
-000-' '
-000-'Building target: blinking_led_app.elf'
-000-'Invoking: MicroBlaze g++ linker'
-000-mb-g++ -Wl,-T -Wl,../src/lscript.ld -LC:/Users/samuel_hussey1/Documents/blinking_led_firmware/blinking_led_platform/export/blinking_led_platform/sw/blinking_led_platform/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "blinking_led_app.elf"  ./src/blinking_led_core.o ./src/chu_init.o ./src/gpio_cores.o ./src/main_vanilla_test.o ./src/timer_core.o ./src/uart_core.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-000-'Finished building target: blinking_led_app.elf'
-000-' '
-000-'Invoking: MicroBlaze Print Size'
-000-mb-size blinking_led_app.elf  |tee "blinking_led_app.elf.size"
-000-   text	   data	    bss	    dec	    hex	filename
-000-   3332	    284	   3136	   6752	   1a60	blinking_led_app.elf
-000-'Finished building: blinking_led_app.elf.size'
-000-' '
-00255-
-11:12:35 Build Finished (took 479ms)
-
